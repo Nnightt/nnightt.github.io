@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人网站 - 首页</title>
+    <title>我的项目</title>
     <link rel="stylesheet" href="style.css">
+    <script src="like.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的个人网站</h1>
+        <h1>项目</h1>
         <nav>
             <a href="index.html">首页</a>
             <a href="about.html">关于我</a>
@@ -18,7 +19,13 @@
         </nav>
     </header>
     <main>
-        <p>探索我的网站，了解我的项目和兴趣。</p>
+        <div class="project">
+            <h2>我奶奶都会写的点赞项目</h2>
+            <p>这是我的第一个项目介绍。</p>
+            <button class="like-btn" onclick="likeProject(1)">👍 点赞</button>
+            <span id="like-count-1">0</span> 个赞
+        </div>
+        <!-- 可以添加更多项目 -->
     </main>
 </body>
 </html>
